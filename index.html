@@ -51,6 +51,16 @@
             <button class="hero-btn btn" type="button" data-modal-open>Заказать услугу</button>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
+                    <form class="form" >
+                        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                        <ul class="modsl-list">
+                        <li class="modal-item"><label class="label" for="label">Имя</label><input class=" modal-input" type="text" name="name" id="name"></li>
+                        <li class="modal-item"><label class="label" for="">Телефон</label><input class=" modal-input" type="tel" name="tel" id="tel"></li>
+                        <li class="modal-item"><label class="label" for="e">Почта</label><input class=" modal-input" type="email" name="email" id="email"></li>
+                        <li class="modal-item"><label class="label" for="">Коментарии</label><textarea class=" comment" name="modal-text" id="modal-text"></textarea></li>
+                        <label class="label label-checkbox" for="checkbox"><svg class="checkbox-icon"><use href="./images/icons.svg#icon-full-check"></use></svg><input class="checkbox"  type="checkbox" name="checkbox" id="license">Соглашаюсь с рассылкой и принимаю<a href="">Условия договора</a></label>
+                        </ul>
+                    </form>
                     <button class="close-btn" type="button" data-modal-close><svg class="close-btn-icon">
                             <use href="images/icons.svg#icon-close-black"></use>
                         </svg></button>
@@ -294,25 +304,18 @@
                     </li>
                 </ul>
                 </div>
+                <div class="footer-enter">
+                    <p class="footer-mail-text">Подпишитесь на рассылку</p>
+                    <div class="footer-form-btn">
+                        <input type="email" name="email" class="email-enter" placeholder="Email">
+                    <button type="submit" class="footer-btn"><span class="footer-btn-text">Подписаться</span><svg class="footer-icon-mail"><use href="./images/icons.svg#icon-footericonmail"></use></svg></button></div>
+                </div>
             </div>
+           
         </footer>
 
-        <script>
-            (() => {
-                    const refs = {
-                        openModalBtn: document.querySelector("[data-modal-open]"),
-                        closeModalBtn: document.querySelector("[data-modal-close]"),
-                        modal: document.querySelector("[data-modal]"),
-                    };
-
-                    refs.openModalBtn.addEventListener("click", toggleModal);
-                    refs.closeModalBtn.addEventListener("click", toggleModal);
-
-                    function toggleModal() {
-                        refs.modal.classList.toggle("is-hidden");
-                    }
-                })();
-        </script>
+        <script src="./js/modal.js"></script>
+        
         
         </body>
     
