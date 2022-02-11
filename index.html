@@ -53,13 +53,36 @@
                 <div class="modal">
                     <form class="form" >
                         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-                        <ul class="modsl-list">
-                        <li class="modal-item"><label class="label" for="label">Имя</label><input class=" modal-input" type="text" name="name" id="name"></li>
-                        <li class="modal-item"><label class="label" for="">Телефон</label><input class=" modal-input" type="tel" name="tel" id="tel"></li>
-                        <li class="modal-item"><label class="label" for="e">Почта</label><input class=" modal-input" type="email" name="email" id="email"></li>
-                        <li class="modal-item"><label class="label" for="">Коментарии</label><textarea class=" comment" name="modal-text" id="modal-text"></textarea></li>
-                        <label class="label label-checkbox" for="checkbox"><svg class="checkbox-icon"><use href="./images/icons.svg#icon-full-check"></use></svg><input class="checkbox"  type="checkbox" name="checkbox" id="license">Соглашаюсь с рассылкой и принимаю<a href="">Условия договора</a></label>
+                        <ul class="modal-list">
+                        <li class="modal-item">
+                            <label class="label" for="label"><span class="modal-item-text">Имя</span></label>
+                            <input class=" modal-input" type="text" name="name"><svg class="icon-form" width="18" height="18">
+                                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                            </svg>
+                        </li>
+                        <li class="modal-item">
+                            <label class="label" for=""><span class="modal-item-text">Телефон</span></label>
+                            <input class=" modal-input" type="tel" name="tel"><svg class="icon-form" width="18" height="18">
+                                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                            </svg></li>
+                        <li class="modal-item">
+                            <label class="label" for=""><span class="modal-item-text">Почта</span></label>
+                            <input class=" modal-input" type="email" name="email" ><svg class="icon-form" width="18" height="18">
+                                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                            </svg></li>
+                        <li class="modal-item">
+                            <label class="label" for="comment"><span class="modal-item-text comment-text">Коментарии</span></label>
+                            <textarea class=" comment" name="modal-text" placeholder="Введите текст" id="comment"></textarea>
+                        </li>
+                        <label class="label label-checkbox" for="checkbox">
+                        <input class="checkbox" type="checkbox" name="checkbox">
+                             <svg  class="checkbox-icon">
+                                <use href="./images/icons.svg#icon-full-check"></use></svg>
+                           <span class="license-text"> Соглашаюсь с рассылкой и принимаю</span>
+                            <a class="checkbox-link" href="">Условия договора</a>
+                            </label>
                         </ul>
+                        <button type="submit" class="form-button"><span class="form-btn-text">Отправить</span></button>
                     </form>
                     <button class="close-btn" type="button" data-modal-close><svg class="close-btn-icon">
                             <use href="images/icons.svg#icon-close-black"></use>
